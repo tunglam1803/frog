@@ -13,7 +13,6 @@ public class PlayerController : MonoBehaviour
     private float fallMultiplier = 2.5f;
     private float lowJumpMultiplier = 2f;
     private bool isFacingRight = true;
-
     private int jumpCount = 0;
     private int maxJumps = 2;
 
