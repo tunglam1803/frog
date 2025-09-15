@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
         // go
         animator.SetFloat("go", Mathf.Abs(h_move));
 
-        // jump
+        // jump and double jump
         if (Input.GetButtonDown("Jump") && jumpCount < maxJumps)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
