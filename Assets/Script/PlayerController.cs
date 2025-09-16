@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     public Rigidbody2D rb;
     public Animator animator;
+    public Vector3 initialPosition;
     private int speed = 4;
     private float h_move;
     private float jumpForce = 7f;
@@ -15,6 +16,11 @@ public class PlayerController : MonoBehaviour
     private bool isFacingRight = true;
     private int jumpCount = 0;
     private int maxJumps = 2;
+
+    void Start()
+    {
+        initialPosition = transform.position;
+    }
 
     void Update()
     {
